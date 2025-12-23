@@ -30,24 +30,27 @@ venv\Scripts\activate        # Windows
 # 3. Установить зависимости (CPU-версия PyTorch)
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
 pip install pandas matplotlib opencv-python tqdm requests "huggingface_hub[cli]" fsspec jupyterlab
+```
 
 Доступ к датасету HuggingFace
 CSV с метаданными берётся из датасета Codatta/MM-Food-100K:
-
+```bash
 hf://datasets/Codatta/MM-Food-100K/MM-Food-100K.csv
-
+```
 Запуск ноутбука
-
+```bash
 jupyter lab
 # или
 jupyter notebook
+```
 Затем в браузере открыть файл:
-
+```bash
 food_object_detection_pytorch.ipynb
-
+```
 И выполнить ячейки по порядку сверху вниз.
 
 Что делает ноутбук
+
 Краткая структура:
 
 Imports and Environment Setup
